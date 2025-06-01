@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<title>Bán Hàng - Muchie Corner</title>
+	<style>
+        body {
+            background: #fff;
+            color: #000;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #000;
+            border-radius: 5px;
+            background: #fff;
+        }
+        .card-header {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.1rem;
+            border-bottom: none;
+        }
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+        .img-fluid {
+            max-width: 100%;
+            border: 1px solid #000;
+        }
+        .guide {
+            margin-top: 15px;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        .guide h6 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .guide ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .guide p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+       <div id="navbar"></div>
+	<div class="container">
+
+        
+        <div class="card">
+            <div class="card-header"> Bán Hàng - Muchie Corner</div>
+            <div class="card-body">
+                <p>Chào mừng đến Muchie Corner!</p>
+                <img src="images/banhang.png" class="img-fluid" alt="Hướng dẫn Thống kê sản phẩm" />
+                <div class="guide">
+									<h6>Hướng dẫn sử dụng – Thống kê sản phẩm</h6>
+				<ul>
+				  <li><strong>Chọn hãng sản xuất:</strong> Người dùng chọn từ danh sách các hãng như Orion, Bibica, Vinamilk... để lọc sản phẩm theo hãng tương ứng.</li>
+				  <li><strong>Chọn loại sản phẩm:</strong> Có thể chọn các loại như Snack Mặn, Snack Ngọt, Kẹo, Socola... để thu hẹp kết quả thống kê.</li>
+				  <li><strong>Lọc kết quả:</strong> Nhấn nút "Lọc kết quả" để hiển thị danh sách sản phẩm phù hợp với tiêu chí đã chọn.</li>
+				  <li><strong>Bảng thống kê sản phẩm:</strong> Kết quả sẽ hiển thị trong bảng gồm các cột:
+					<ul>
+					  <li>STT</li>
+					  <li>Hãng sản xuất</li>
+					  <li>Loại</li>
+					  <li>Tên sản phẩm</li>
+					  <li>Đơn giá</li>
+					  <li>SL (Số lượng)</li>
+					  <li>Thành tiền</li>
+					</ul>
+				  </li>
+				  <li><strong>Chuyển trang:</strong> Sử dụng các nút mũi tên để di chuyển qua lại giữa các trang kết quả nếu có nhiều sản phẩm.</li>
+				  <li><strong>In thống kê:</strong> Nhấn vào biểu tượng máy in để in bảng thống kê sản phẩm.</li>
+				  <li><strong>Xuất file:</strong> Nhấn vào biểu tượng lưu để xuất dữ liệu bảng thống kê sang các định dạng như PDF, Excel, v.v.</li>
+				</ul>
+				<p><em>Lưu ý:</em> Cần chọn ít nhất một tiêu chí (hãng sản xuất hoặc loại sản phẩm) trước khi nhấn "Lọc kết quả" để tránh việc không hiển thị dữ liệu.</p>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+	        <div id="footer"></div>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<title>Sản phẩm - Muchie Corner</title>
+	<style>
+        body {
+            background: #fff;
+            color: #000;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #000;
+            border-radius: 5px;
+            background: #fff;
+        }
+        .card-header {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.1rem;
+            border-bottom: none;
+        }
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+        .img-fluid {
+            max-width: 100%;
+            border: 1px solid #000;
+        }
+        .guide {
+            margin-top: 15px;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        .guide h6 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .guide ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .guide p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="navbar"></div>
+	<div class="container">
+        
+        <div class="card">
+            <div class="card-header"> Sản phẩm - Muchie Corner</div>
+            <div class="card-body">
+                <p>Chào mừng đến Muchie Corner!</p>
+                <img src="images/sanpham.png" class="img-fluid" alt="Hướng dẫn quản lý Sản phẩm" />
+                <div class="guide">
+                 <h6>Hướng dẫn sử dụng – Quản Lý Sản Phẩm</h6>
+					<ul>
+					  <li><strong>Phân loại:</strong> Chọn loại sản phẩm như Snack Mặn, Snack Ngọt,... (bắt buộc).</li>
+					  <li><strong>Hãng sản xuất:</strong> Chọn tên hãng sản xuất tương ứng như Orion, Bibica,...</li>
+					  <li><strong>Tên sản phẩm:</strong> Nhập tên chi tiết của sản phẩm (bắt buộc, ví dụ: Snack O'Star Tôm Cay).</li>
+					  <li><strong>Mô tả sản phẩm:</strong> Ghi chú hoặc thông tin thêm về sản phẩm (có thể để trống).</li>
+					  <li><strong>Số lượng:</strong> Nhập số lượng sản phẩm còn tồn kho (bắt buộc, chỉ nhận số nguyên dương).</li>
+					  <li><strong>Đơn giá:</strong> Nhập giá bán cho từng sản phẩm (bắt buộc, không được nhỏ hơn 0).</li>
+					  <li><strong>Hình ảnh:</strong> Nhấn vào khung ảnh để chọn hình minh họa từ máy tính (nên dùng ảnh vuông đẹp). Hình sẽ hiển thị cả trong danh sách sản phẩm.</li>
+					  <li><strong>Thêm:</strong> Dùng để nhập sản phẩm mới vào danh sách.</li>
+					  <li><strong>Sửa:</strong> Dùng để điều chỉnh thông tin của sản phẩm đang chọn.</li>
+					  <li><strong>Lưu:</strong> Xác nhận thêm hoặc sửa sản phẩm.</li>
+					  <li><strong>Hủy:</strong> Dừng thao tác hiện tại, xóa trắng các ô nhập liệu.</li>
+					  <li><strong>Xóa:</strong> Gỡ bỏ sản phẩm khỏi danh sách.</li>
+					  <li><strong>Thoát:</strong> Đóng giao diện quản lý sản phẩm.</li>
+					  <li><strong>Tìm kiếm:</strong> Gõ từ khóa vào để lọc nhanh theo tên, hãng hoặc loại sản phẩm.</li>
+					  <li><strong>Nhập / Xuất:</strong> Nhập dữ liệu từ Excel hoặc xuất ra file Excel để lưu trữ/thống kê.</li>
+					</ul>
+					<p><em>Lưu ý:</em> Các trường có dấu (*) là bắt buộc, không được để trống nếu muốn thêm sản phẩm vào danh sách.</p>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+	        <div id="footer"></div>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+    </script>
+</body>
+
+</html>

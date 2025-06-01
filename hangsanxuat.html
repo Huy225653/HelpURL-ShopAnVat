@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<title>Hãng sản xuất - Muchie Corner</title>
+	<style>
+        body {
+            background: #fff;
+            color: #000;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #000;
+            border-radius: 5px;
+            background: #fff;
+        }
+        .card-header {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.1rem;
+            border-bottom: none;
+        }
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+        .img-fluid {
+            max-width: 100%;
+            border: 1px solid #000;
+        }
+        .guide {
+            margin-top: 15px;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        .guide h6 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .guide ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .guide p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="navbar"></div>
+	<div class="container">
+        
+        <div class="card">
+            <div class="card-header">Hãng sản xuất - Muchie Corner</div>
+            <div class="card-body">
+                <p>Chào mừng đến Muchie Corner!</p>
+                <img src="images/hangsanxuat.png" class="img-fluid" alt="Hướng dẫn quản lý Hãng sản xuất" />
+                <div class="guide">
+                    <h6>Hướng dẫn quản lý Hãng sản xuất:</h6>
+						<ul>
+						  <li>Nhập tên hãng sản xuất vào ô <strong>"Hãng sản xuất (*)"</strong> phía trên.</li>
+						  <li>Nhấn <strong>"Thêm"</strong> để thêm hãng sản xuất mới vào danh sách.</li>
+						  <li>Chọn một dòng trong bảng, sau đó nhấn <strong>"Sửa"</strong> để chỉnh sửa tên hãng.</li>
+						  <li>Nhấn <strong>"Xóa"</strong> để xóa hãng sản xuất đang chọn khỏi danh sách.</li>
+						  <li>Sau khi thêm hoặc sửa, nhấn <strong>"Lưu"</strong> để lưu lại thay đổi.</li>
+						  <li>Nhấn <strong>"Hủy"</strong> để bỏ qua thao tác đang thực hiện.</li>
+						  <li>Nhấn <strong>"Thoát"</strong> để thoát giao diện quản lý hãng sản xuất.</li>
+						  <li>Sử dụng ô <strong>"Tìm kiếm"</strong> để lọc danh sách hãng theo tên nhanh chóng.</li>
+						  <li>Có thể sử dụng các nút <strong>"Nhập..."</strong> và <strong>"Xuất..."</strong> để thao tác với dữ liệu từ file Excel.</li>
+						</ul>
+						<p><em>Lưu ý:</em> Chức năng này không có thông tin tài khoản hay mật khẩu như các form đăng nhập khác.</p>
+
+                </div>
+            </div>
+        </div>
+       
+    </div>
+	        <div id="footer"></div>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+    </script>
+</body>
+
+</html>
